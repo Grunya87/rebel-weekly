@@ -1,0 +1,19 @@
+{
+  "name": "rebel-weekly",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grunya87/rebel-weekly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grunya87/rebel-weekly/issues"
+  },
+  "homepage": "https://github.com/Grunya87/rebel-weekly#readme"
+}
