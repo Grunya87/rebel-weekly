@@ -1,0 +1,14 @@
+{
+  "name": "rebel-weekly",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grunya87/rebel-weekly.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grunya87/rebel-weekly/issues"
+  },
+  "homepage": "https://github.com/Grunya87/rebel-weekly#readme"
+}
