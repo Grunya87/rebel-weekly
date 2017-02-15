@@ -13,10 +13,10 @@ body {
 }
 
 .container {
-  width: 474px;
+  width: 480px;
   margin: 0 auto;
-  padding-left: 123px;
-  padding-right: 123px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .clearfix::after {
@@ -25,7 +25,7 @@ body {
     clear: both;
 }
 
-/*---------------------------main-header-------------------------------------*/
+/*---------------------------MAIN-HEADER-------------------------------------*/
 
 .main-header {
   margin-bottom: 35px;
@@ -35,19 +35,66 @@ body {
                     rgba(80, 105, 123, 0.4));
 }
 
+.inner-page .main-header {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.inner-page .main-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+
+  width: 480px;
+  height: 0.5px;
+  background-color: #f0f0f0;
+}
+
 .logo {
   float: left;
-  padding-top: 4px;
-  padding-bottom: 52px;
-
   width: 133px;
   height: 33px;
+  margin-left: 2px;
+  padding-top: 4px;
+  padding-bottom: 52px;
+}
+
+.inner-page .logo {
+  padding-bottom: 5px;
+
+}
+
+.inner-page .logo img {
+  float: left;
+  width: 28px;
+  height: 31px;
+}
+
+.inner-page .logo span {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-left: 9px;
+
+  font-family: 'Baron Neue', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #59b6dc;
 }
 
 .main-nav {
   float: right;
   margin-top: 14px;
-  /*width: 138px;*/
 }
 
 .main-nav ul {
@@ -62,6 +109,10 @@ body {
   color: #ffffff;
 }
 
+.inner-page .main-nav .active{
+  color: #59b6dc;
+}
+
 .main-nav .active::after {
   content: "";
   position: absolute;
@@ -70,6 +121,10 @@ body {
   right: 8px;
   height: 0.5px;
   background-color: #ffffff;
+}
+
+.inner-page .main-nav .active::after {
+  background-color: #59b6dc;
 }
 
 .main-nav li {
@@ -94,6 +149,10 @@ body {
   opacity: 1.0;
 }
 
+.inner-page .main-nav a {
+  color: #59b6dc;
+}
+
 .search-item {
   position: relative;
 }
@@ -111,9 +170,12 @@ body {
   background-size: 6px auto;
 }
 
-
 .main-nav li:first-child {
   /*display: none;*/
+}
+
+.inner-page .main-nav li:first-child {
+  display: none;
 }
 
 .search-block {
@@ -125,7 +187,10 @@ body {
   margin-top: 12px;
   margin-right: 9px;
   width: 113px;
+}
 
+.inner-page .search-block {
+  display: inline-block;
 }
 
 .search {
@@ -137,6 +202,11 @@ body {
   border-radius: 3.5px;
   background-color: rgba(255, 255, 255, 0.15);
   border: solid 0.5px #ffffff;
+}
+
+.inner-page .search {
+  background-color: rgba(225, 241, 248, 0.5);
+  border-color: #59b6dc;
 }
 
 .search-block form::after {
@@ -206,14 +276,14 @@ body {
   display: block;
 }
 
-/*----------------------------main---------------------------------------*/
+/*----------------------------MAIN---------------------------------------*/
 
 main a {
   font-weight: 600;
   color: #2c98c4;
 }
 
-.inner-title {
+.title-item {
   margin-bottom: 19px;
   padding: 8px 10px;
 
@@ -221,7 +291,7 @@ main a {
   background-image: linear-gradient(to right, #f4fafd, #fbfdfe);
 }
 
-.inner-title h1 {
+.title-item h1 {
   margin: 0;
 
   font-size: 13px;
@@ -229,7 +299,7 @@ main a {
   color: #000000;
 }
 
-.inner-title b {
+.title-item b {
   font-weight: 600;
 }
 
@@ -292,6 +362,57 @@ main a {
 
 .content p {
   margin: 0;
+}
+
+/*---------------------------------main-archive----------------------------*/
+
+.title {
+  margin: 0;
+  margin-left: 9px;
+  margin-bottom: 18px;
+
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #153a55;
+}
+
+.content-archive {
+  margin-bottom: 19px;
+  padding-left: 9px;
+}
+
+.content-archive h2 {
+  margin: 0;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.content-archive a {
+  font-weight: bold;
+  color: #2c98c4;
+}
+
+.item-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 4px;
+
+}
+
+.item-list li {
+  margin-bottom: 1px;
+}
+
+.item-list li:last-child {
+  margin-bottom: 0;
+}
+
+.inner-page main {
+  margin-bottom: 82px;
 }
 
 /*---------------------------------footer----------------------------------*/
