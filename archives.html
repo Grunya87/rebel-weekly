@@ -15,7 +15,7 @@
 </head>
 <body class="inner-page">
 
-  <header class="main-header">
+  <header class="main-header inner-main-header">
     <div class="container clearfix">
       <div class="logo">
         <img src="img/rebel-logo-blue.svg" width="28px" height="31px" alt="rebel-logo">
@@ -23,17 +23,17 @@
       </div>
       <nav class="main-nav">
         <ul>
+          <li class="search-block">
+            <form action="" method="get">
+              <input class="search" type="search" name="search">
+            </form>
+          </li>
           <li class="search-item"><a href="#">Поиск</a></li>
           <li><a href="#">Новый выпуск</a></li>
           <li class="active"><span>Архив</span></li>
           <li><a href="#">RSS</a></li>
         </ul>
       </nav>
-      <div class="search-block">
-        <form action="" method="get">
-          <input class="search" type="search" name="search">
-        </form>
-      </div>
     </div>
 
   </header>
@@ -174,7 +174,11 @@
 
   <footer>
     <div class="container">
-      <img src="img/rebel-weekly-light.png" width="65px" height="39px" alt="rebel-weekly-light">
+      <picture>
+        <source  media="(min-width: 1440px)" srcset="img/rebel-weekly-logo-light/rebel-weekly-logo-light@3x.png">
+        <source media="(min-width: 1024px)" srcset="img/rebel-weekly-logo-light/rebel-weekly-logo-light@2x.png">
+        <img src="img/rebel-weekly-logo-light/rebel-weekly-logo-light.png" alt="rebel-weekly-light">
+      </picture>
     </div>
   </footer>
 
