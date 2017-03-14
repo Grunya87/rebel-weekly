@@ -17,21 +17,23 @@
   <header class="main-header">
     <div class="container clearfix">
       <div class="logo">
-        <img src="img/rebel-weekly.png" width="133px" height="33px" alt="rebel-weekly-logo">
+        <img src="img/rebel-weekly-logo-white.svg" width="133px" height="33px" alt="rebel-weekly-logo">
       </div>
       <nav class="main-nav">
+
         <ul>
+          <li class="search-block">
+            <form action="" method="get">
+              <input class="search" type="search" name="search">
+            </form>
+          </li>
           <li class="search-item"><a href="#">Поиск</a></li>
           <li class="active"><span>Новый выпуск</span></li>
           <li><a href="#">Архив</a></li>
           <li><a href="#">RSS</a></li>
         </ul>
       </nav>
-      <div class="search-block">
-        <form action="" method="get">
-          <input class="search" type="search" name="search">
-        </form>
-      </div>
+
     </div>
     <div class="subscribe-block container">
       <form class="subscribe-form" action="" method="get">
@@ -132,8 +134,13 @@
   </main>
 
   <footer>
+
     <div class="container">
-      <img src="img/rebel-weekly-light.png"   alt="rebel-weekly-light">
+      <picture>
+        <source  media="(min-width: 1440px)" srcset="img/rebel-weekly-logo-light/rebel-weekly-logo-light@3x.png">
+        <source media="(min-width: 1024px)" srcset="img/rebel-weekly-logo-light/rebel-weekly-logo-light@2x.png">
+        <img src="img/rebel-weekly-logo-light/rebel-weekly-logo-light.png" alt="rebel-weekly-light">
+      </picture>
     </div>
   </footer>
 
